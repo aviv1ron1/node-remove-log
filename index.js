@@ -16,7 +16,7 @@ var remove = function(src, callback) {
 }
 
 module.exports = {
-    removeFromPath: (path, callback) {
+    removeFromPath: (path, callback) => {
         fs.readFile(path, (err, data) => {
             if (err) {
                 console.error("node-remove-log: file not found", err);
@@ -27,7 +27,7 @@ module.exports = {
             }
         });
     },
-    removeFromString: (src, callback) {
+    removeFromString: (src, callback) => {
         remove(src, callback);
     }
 }
