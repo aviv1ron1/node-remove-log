@@ -1,6 +1,6 @@
 {
   "name": "remove-log",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "remove console.* calls from source code",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/aviv1ron1/node-remove-log/issues"
   },
-  "homepage": "https://github.com/aviv1ron1/node-remove-log#readme"
+  "homepage": "https://github.com/aviv1ron1/node-remove-log#readme",
+  "dependencies": {
+    "falafel": "^2.1.0"
+  }
 }
