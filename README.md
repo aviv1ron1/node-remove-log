@@ -3,7 +3,7 @@ node module for removing console.* calls from source code. input js code as stri
 this module uses falafel to walk the AST tree.
 
 ## usage
-
+```javascript
 const removeLogs = require("remove-logs");
 removeLogs.removeFromPath("/somepath.js", (err, modifiedSrc) => {
 	//modifiedSrc is the source code without console calls
@@ -12,6 +12,7 @@ removeLogs.removeFromPath("/somepath.js", (err, modifiedSrc) => {
 removeLogs.removeFromString("var x = 1; console.log('test');", (err, modifiedSrc) => {
 	//modifiedSrc is the source code without console calls
 });
+```
 
 ## customization
 if you wish to leave console calls in the output code leave a comment `//include` at the end of the console call. for example:
@@ -20,3 +21,6 @@ if you wish to leave console calls in the output code leave a comment `//include
 console.log("this line will be removed");
 console.log("this line will not be removed"); //include
 ```
+
+## license
+MIT
