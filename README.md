@@ -1,5 +1,5 @@
-# node-remove-log
-node module for removing console.* calls from source code. input js code as string or path and output the code without console calls.
+# remove-log
+node module for removing console.* (log, warn, err etc...) calls from source code. input js code as string or path and output the code without console calls.
 this module uses falafel to walk the AST tree.
 
 ## usage
