@@ -11,7 +11,7 @@ var remove = function(src, callback) {
             }
         });
         callback(null, output);
-    } catch (ex) {
+    } catch (err) {
         console.error("remove-log: error while walking code", err);
         callback(err);
     }
